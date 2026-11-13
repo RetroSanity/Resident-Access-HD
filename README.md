@@ -1,32 +1,66 @@
 # Resident Access HD
 
-A screen reader mod that makes **Resident Evil HD Remaster** (Steam, PC) playable blind with an Xbox controller. It speaks through NVDA.
+A screen reader mod for Resident Evil HD Remaster (Steam, PC) that lets blind players play the whole game with an Xbox controller.
 
-It reads the game's menus, messages, cutscene subtitles, the item box, the status screen and the save screen. It tells you about enemies and your health, and gives you an aim pulse when a shot would hit. It has a list of the doors, items, things to check, puzzles and enemies in each room, and an auto walk that takes you to whichever one you pick.
+It reads the game out loud through your screen reader (NVDA, JAWS, ZoomText, System Access and others) or, with none running, through Windows' own voices. It also tells you what is in each room and can walk you to anything in it.
 
-## What you need
+[Download the latest version](https://github.com/RetroSanity/Resident-Access-HD/releases/latest)
 
-- Resident Evil / biohazard HD REMASTER on Steam, on Windows 10 or 11
-- NVDA running while you play
-- An Xbox controller
+## What it does
 
-Python is included in the download, so you don't need to install anything else.
+- Reads the game: title screens and menus, the Option menu and the values on its screens, New game setup, difficulty and Character select, load and save slots, every message and question, cutscene subtitles, your items, files, the item box, the status screen, and puzzle screens such as the lab computer and keypads.
+- Room lists: everything in the room you are in, in five lists: Doors, Items, Things to check, Puzzles and Enemies. Each one comes with its distance and direction ("13 metres, ahead and to the right"). Puzzles explain how they are done, and where order matters the next step is listed first.
+- Auto walk: pick anything in the list and the mod walks you there. It goes round walls, furniture and enemies, and through stairs, ladders and doors within a room. Hold the run button to run.
+- 3D beacon: if you'd rather walk yourself, follow a sound placed all round you on headphones (OpenAL Soft with HRTF). It leads you round obstacles to where you want to go.
+- Combat: names the enemies in the room with their health. A soft aim beep rings when a shot would hit. On Plant 42, the aim stays on the bulb.
+- Jill and Chris: both characters work.
+- Updates itself: it checks for a new version each time it starts. If its files are ever broken, it downloads them again.
+
+## Requirements
+
+- Resident Evil HD Remaster on Steam, on Windows 10 or 11
+- An Xbox controller (or any controller the game sees as one)
+- A screen reader is recommended; without one, Windows' voices are used
+- Nothing else: Python comes with the mod
 
 ## Installing
 
-1. Download the zip from the latest release on the [Releases page](../../releases/latest).
-2. Unzip the whole folder somewhere it can stay, for example Documents.
-3. Run **Install Resident Access.bat**. It finds the game through Steam by itself and adds the mod to it.
-4. Start the game from Steam. The mod starts with it and says "Resident Access ready".
+1. Download the zip from the [latest release](https://github.com/RetroSanity/Resident-Access-HD/releases/latest) and unzip it anywhere, for example in Documents.
+2. Run Install Resident Access.bat. It finds the game through Steam and adds a small controller add-on to the game's folder.
+3. Start the game from Steam. The mod starts with it and says "Resident Access ready".
+4. In the game's options, set Controls to Original and keep Subtitles on. Auto walk and the beacon need Original controls.
 
-In the game's settings, keep Controls on Original and Subtitles On.
+## Controls
 
-## Updating
+Hold the left bumper and use:
 
-The mod updates itself. Each time it starts it checks for a new release here and installs it. You can also run **Update Resident Access.bat** to check by hand.
+| Button | What it does |
+| --- | --- |
+| D-pad left and right | Previous and next list |
+| D-pad up and down | Previous and next thing in the list |
+| Left stick press | Auto walk to it |
+| Right stick press | 3D beacon to it (again to stop) |
+| B | Stop walking |
+| Y | Where it is again |
+| X | Your health |
+| A | The room and its doors |
+| Right bumper | Enemies in the room |
 
-## Uninstalling
+The game ignores these buttons while the left bumper is held. There are keyboard keys for everything too: see README.txt in the download.
 
-Run **Uninstall Resident Access.bat**, then delete the folder.
+## Updating and uninstalling
 
-All the controls are in README.txt inside the download.
+- The mod updates itself when it starts. Update Resident Access.bat checks straight away. Your settings are kept.
+- To remove it, run Uninstall Resident Access.bat, then delete the folder.
+
+## Reporting a problem
+
+The mod writes everything it says, and any errors, to rehdaccess.log in its folder. The session before is kept as rehdaccess.old.log. Please attach both, and say where in the game you were, when you report a problem in [Issues](https://github.com/RetroSanity/Resident-Access-HD/issues).
+
+## Credits
+
+- [OpenAL Soft](https://openal-soft.org/) for the 3D sound (LGPL)
+- [Prism](https://github.com/ethindp/prism) for screen reader and Windows voice support (MPL 2.0)
+- NVDA Controller Client for speech through NVDA
+
+Their licences are in the `lib` folder of the download.
