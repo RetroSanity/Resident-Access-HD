@@ -53,6 +53,10 @@ The game ignores these buttons while the left bumper is held. There are keyboard
 - The mod updates itself when it starts. Update Resident Access.bat checks straight away. Your settings are kept.
 - To remove it, run Uninstall Resident Access.bat, then delete the folder.
 
+## If menus are silent
+
+If the mod says the controller add-on is not loaded, it also says why. Usually the add-on is missing from the game's folder: run Install Resident Access.bat again. Antivirus can remove it, so allow xinput1_4.dll in the game's folder. If it went in while the game was open, close the game and start it from Steam.
+
 ## Reporting a problem
 
 The mod writes everything it says, and any errors, to rehdaccess.log in its folder. The session before is kept as rehdaccess.old.log. Please attach both, and say where in the game you were, when you report a problem in [Issues](https://github.com/RetroSanity/Resident-Access-HD/issues).
