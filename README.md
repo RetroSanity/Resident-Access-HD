@@ -8,7 +8,7 @@ It reads the game out loud through your screen reader (NVDA, JAWS, ZoomText, Sys
 
 ## What it does
 
-- Reads the game: title screens and menus, the Option menu and the values on its screens, New game setup, difficulty and Character select (with every costume described), load and save slots, every message and question, cutscene subtitles, your items, files, the item box, the status screen, and puzzle screens such as the lab computer and keypads. After the ending it reads the Result screen and saving the cleared data.
+- Reads the game: title screens and menus, the Option menu and the values on its screens, New game setup, difficulty and Character select (with every costume described), load and save slots, every message and question, cutscene subtitles, your items, files (every page, with the controller buttons named), the item box, the status screen, and puzzle screens such as the lab computer and keypads. After the ending it reads the Result screen and saving the cleared data.
 - Room lists: everything in the room you are in, in five lists: Doors, Items, Things to check, Puzzles and Enemies. Each one comes with its distance and direction ("13 metres, ahead and to the right"). Puzzles explain how they are done, and where order matters the next step is listed first.
 - Auto walk: pick anything in the list and the mod walks you there. It goes round walls, furniture and enemies, and through stairs, ladders and doors within a room. Hold the run button to run. For things to push, such as the statue in the caves, it takes you round to the side to push from, says which way to push, keeps the push straight and says when to stop. Works with both control schemes, Original and Alternate. Carrying the fuel capsule, you are kept to a walk, even when you walk yourself.
 - 3D beacon: if you'd rather walk yourself, follow a sound placed all round you on headphones (OpenAL Soft with HRTF). It leads you round obstacles to where you want to go, turn by turn. Behind you the knock is lower. On the Alternate controls the sound is placed the way the stick walks you: in front means push up.
@@ -28,7 +28,7 @@ It reads the game out loud through your screen reader (NVDA, JAWS, ZoomText, Sys
 1. Download the zip from the [latest release](https://github.com/RetroSanity/Resident-Access-HD/releases/latest) and unzip it anywhere, for example in Documents.
 2. Run Install Resident Access.bat. It finds the game through Steam and adds a small controller add-on to the game's folder.
 3. Start the game from Steam. The mod starts with it and says "Resident Access ready".
-4. Keep Subtitles on in the game's options. Auto walk and the 3D beacon work with either control scheme, Original or Alternate.
+4. Subtitles can be on or off. Auto walk and the 3D beacon work with either control scheme, Original or Alternate: the mod picks up the one you choose in the game's options.
 
 ## Controls
 
