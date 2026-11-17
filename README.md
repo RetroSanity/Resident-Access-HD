@@ -12,7 +12,8 @@ It reads the game out loud through your screen reader (NVDA, JAWS, ZoomText, Sys
 - Room lists: everything in the room you are in, in five lists: Doors, Items, Things to check, Puzzles and Enemies. Each one comes with its distance and direction ("13 metres, ahead and to the right"). Puzzles explain how they are done, and where order matters the next step is listed first.
 - Auto walk: pick anything in the list and the mod walks you there. It goes round walls, furniture and enemies, and through stairs, ladders and doors within a room. Hold the run button to run. For things to push, such as the statue in the caves, it takes you round to the side to push from, says which way to push, keeps the push straight and says when to stop. Works with both control schemes, Original and Alternate. Carrying the fuel capsule, you are kept to a walk, even when you walk yourself.
 - 3D beacon: if you'd rather walk yourself, follow a sound placed all round you on headphones (OpenAL Soft with HRTF). It leads you round obstacles to where you want to go, turn by turn. Behind you the knock is lower. On the Alternate controls the sound is placed the way the stick walks you: in front means push up.
-- Mod settings (Start, then the last row of the Option menu): a volume for each of the mod's sounds, and a sound glossary that plays each sound and says what it means.
+- Descriptions, written by SeanTerry01 for their own access mod and shared: what each room is like and how it is laid out, what doors, things and items look like, and audio description of the videos and cutscenes in a recorded voice, timed to the gaps in the dialogue.
+- Mod settings (Start, then the last row of the Option menu): a volume for each of the mod's sounds, narration of cutscenes on or off, the recorded voice or your screen reader for it and its volume, and a sound glossary that plays each sound and says what it means.
 - Combat: names the enemies in the room with their health. A soft aim beep rings when a shot would hit. On Plant 42, the aim stays on the bulb and the mod tells you how far it is.
 - Jill and Chris: both characters work.
 - Updates itself: it checks for a new version each time it starts. If its files are ever broken, it downloads them again.
@@ -45,6 +46,8 @@ Hold the left bumper and use:
 | Y | Where it is again |
 | X | Your health |
 | A | The room and its doors |
+| Back | What the room is like |
+| Start | What the thing picked (or the item) looks like |
 | Right bumper | Enemies in the room |
 
 The game ignores these buttons while the left bumper is held. There are keyboard keys for everything too: see README.txt in the download.
@@ -64,6 +67,7 @@ The mod writes everything it says, and any errors, to rehdaccess.log in its fold
 
 ## Credits
 
+- SeanTerry01 for the descriptions: rooms, looks, and the audio description of the videos and cutscenes with its recorded voice
 - [OpenAL Soft](https://openal-soft.org/) for the 3D sound (LGPL)
 - [Prism](https://github.com/ethindp/prism) for screen reader and Windows voice support (MPL 2.0)
 - NVDA Controller Client for speech through NVDA
